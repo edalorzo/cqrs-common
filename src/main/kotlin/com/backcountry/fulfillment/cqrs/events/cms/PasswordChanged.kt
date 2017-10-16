@@ -10,6 +10,6 @@ data class PasswordChanged @JsonCreator constructor(
 
     constructor(command: ChangePassword): this(command.email)
 
-    override fun getRoutingKey() = "ffd.Customer.PasswordChanged";
+    override fun getRoutingKey() = "ffd.OrderCustomer.PasswordChanged";
 
 }

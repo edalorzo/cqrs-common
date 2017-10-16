@@ -10,5 +10,5 @@ data class CustomerDeactivated @JsonCreator constructor(
 
     constructor(command: DeactivateCustomer): this(command.email)
 
-    override fun getRoutingKey() = "ffd.Customer.CustomerDeactivated"
+    override fun getRoutingKey() = "ffd.OrderCustomer.CustomerDeactivated"
 }

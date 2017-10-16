@@ -10,5 +10,5 @@ data class CustomerActivated @JsonCreator constructor(
 
     constructor(command: ActivateCustomer): this(command.email)
 
-    override fun getRoutingKey() = "ffd.Customer.CustomerActivated"
+    override fun getRoutingKey() = "ffd.OrderCustomer.CustomerActivated"
 }
